@@ -1,0 +1,245 @@
+.cardBox {
+  text-align: center;
+  background: #fff;
+  color: var(--AdminMain) !important;
+  border-radius: 5px;
+  padding: 25px 10px;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .cardIcon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+:global(.CircularProgressbar-path) {
+  stroke: rgba(132, 134, 244, 0.7) !important;
+}
+.currentProgresstop{
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0px #e5e5e5;
+  border-radius: 3px;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  height: 500px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  .currentBox {
+   
+    h4 {
+      font-size: 19px;
+      color: #4338ca;
+      font-weight: 600;
+      line-height: 23px;
+    }
+    .currentTeam {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 0px;
+      margin-top: 18px;
+      border-bottom: 2px solid #a0abbb;
+
+      p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+  }
+
+}
+.currentProgress {
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0px #e5e5e5;
+  border-radius: 3px;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  height: 100vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  .currentBox {
+   
+    h4 {
+      font-size: 19px;
+      color: #4338ca;
+      font-weight: 600;
+      line-height: 23px;
+    }
+    .currentTeam {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 0px;
+      margin-top: 18px;
+      border-bottom: 2px solid #a0abbb;
+
+      p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+
+.prtGraph {
+  border: 1px solid #cecdcd;
+  padding: 10px 10px;
+  border-radius: 8px;
+  min-height: 98px;
+
+  h5 {
+    margin: 0px 0px 10px 0px !important;
+    font-size: 12px !important;
+    text-align: center;
+    line-height: 18px !important;
+  }
+  p {
+    margin: 10px 0px 0px 0px;
+    font-size: 12px;
+    text-align: center;
+
+    span {
+      color: #323a46;
+    }
+
+    &.engagementNumber {
+      margin: 20px 0px 0px 0px;
+    }
+  }
+}
+
+.squareChart {
+  
+    font-size: 12px;
+    overflow-y:scroll;
+    height: 338px;
+
+    &::-webkit-scrollbar{
+      display: none !important;
+    }
+ 
+  :global(.recharts-xAxis.xAxis) {
+    display: none;
+  }
+}
+
+.currentProgress {
+  .currentBox {
+    p{
+      select{
+border: none;
+outline:none;
+      }
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 23px;
+      color: #a0abbb;
+      margin: 0px 0px 20px 0px;
+    }
+    table {
+      margin-top: 14px;
+      margin-bottom: 20px;
+      tr {
+        td {
+          padding-right: 16px;
+
+        
+        }
+     
+      }
+    }
+    .currentPrecent {
+     width: 100%;
+      padding-left: 10px;
+
+      :global(.progress) {
+        border-radius: 8px !important;
+       
+        :global(.progress-bar) {
+          background-color: #29cc97 !important;
+        }
+      }
+    
+    }
+   
+    p {
+      color: #a0abbb;
+      width: 150px;
+      word-break: break-all;
+    }
+    .teamChart {
+      ul {
+        padding-left: 0px;
+        padding: 14px 0px;
+        li {
+          display: flex;
+          list-style: none;
+          justify-content: space-between;
+          font-size: 16px;
+          color: #191d23;
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+          border-bottom: 1px solid #ededed;
+          align-items: center;
+
+          span {
+            color: #a0abbb;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width: 767px) {
+
+
+  .prtGraph {
+   margin: 10px 0px;   
+  }
+  .currentProgress {
+    .currentBox {
+    
+  
+      p {
+       
+        width: 95px;
+      
+      }
+    
+      .currentPrecent {
+     
+       
+  
+        :global(.progress) {
+        width: 85px;
+         
+        }
+      }
+    }
+  }
+  
+}

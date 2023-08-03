@@ -1,0 +1,314 @@
+.titleName{
+    font-weight: 600;
+    font-size: 23px;
+    color: #191D23;
+}
+.disabled {
+    .feedbackOverall {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 18px 0px 10px 0px;
+    }
+
+    .messageStart{
+        padding: 0px !important;
+        border-right: 1px solid #E7EAEE;
+
+        .messageLeft{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px !important;
+
+            h3{
+                font-weight: 600;
+                font-size: 16px;
+                color: #191D23;
+                margin-bottom: 0px;
+            }
+            .messageEdit{
+                a{
+                    color: #4B5768 !important;
+                    font-size: 18px;
+                    margin-left: 14px;
+                }
+            }
+        }
+
+        .messageSearch{
+            position: relative;
+            margin-top: 8px;
+            padding: 0px 14px !important;
+
+            input{
+                background: #F7F8F9;
+                border-radius: 4px;
+                font-weight: 400;
+                font-size: 14px;
+                padding-left: 40px !important;
+                color: #64748B;
+                border: none;
+                padding: 10px;
+                width: 100%;
+            }
+
+            svg{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                font-size: 20px;
+                color: #64748B;
+                transform: translate(50%, -0%);
+            }
+        }
+
+        .leftList{
+            ul{
+                list-style: none;
+                padding-left: 0px;
+                margin-bottom: 0px;
+                overflow: hidden;
+                overflow-x: hidden;
+                overflow-y: auto;
+                min-height: 1px;
+                max-height: 480px;
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    padding: 14px !important;
+                    border-bottom: 1px solid #ededed;
+                    
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        margin-right: 12px;
+                    }
+
+                    h4{
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #191D23;
+                        margin-bottom: 3px;
+                    }
+                    p{
+                        color: #64748B;
+                        font-weight: 400;
+                        font-size: 12px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .chatRight{
+        padding: 0px !important;
+
+        .rightHeight{
+            height: 518px;
+        }
+
+        .rightBox{
+            .chatUser{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 14px;
+                border-bottom: 1px solid #ededed;
+
+                .userName{
+                    display: flex;
+                    align-items: center;
+                    
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        margin-right: 8px;
+                        object-fit: cover;
+                    }
+                    h4{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #191D23;
+                        margin-bottom: 0px;
+                    }
+                    h6{
+                        margin-bottom: 0px;
+                        margin-right: 12px;
+                    }
+
+                    :global(.css-13cymwt-control){
+                        border: none !important;
+                    }
+                    :global(.css-1hb7zxy-IndicatorsContainer){
+                        display: none !important;
+                    }
+                }
+            }
+
+            .timeZone{
+                text-align: center;
+                margin: 12px 0px 0px;
+
+                span{
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #64748B;
+                }
+            }
+
+            .chatText{
+                padding: 14px;
+                overflow: hidden;
+                overflow-x: hidden;
+                overflow-y: auto;
+                min-height: 1px;
+                max-height: 223px;
+
+                .textStyle{
+
+                    p{
+                        margin-bottom: 5px;
+                        background: #E7EAEE;
+                        border-radius: 20px 20px 20px 4px;
+                        padding: 12px 16px;
+                        display: inline-block;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #191D23;
+                    }
+                }
+            }
+
+            .chatEditor{
+
+                .chatEdit{
+                    background: #FFFFFF;
+                    border-radius: 0px 0px 16px 16px;
+                    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+
+                    .chatSend{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 14px;
+
+                        a{
+                            color: #4B5768 !important;
+                            margin-left: 12px;
+                            font-size: 18px;
+                        }
+                        :global(.react-wysiwyg-typescript-editor){
+                            min-height: 90px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .additionalBtn{
+        a{
+            display: block;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+    }
+}
+
+.paddingMin{
+    padding: 0px !important;
+}
+.massageBack{
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0px #e5e5e5;
+    border-radius: 3px;
+    // padding: 30px 30px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+
+    .modalCts {
+
+        &.modalCtsAction {
+
+            :global(.modal-dialog) {
+
+                :global(.modal-content) {
+                    background-color: #fff;
+
+                    :global(.btn-close) {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    :global(.modal-body) {
+                        padding-top: 0px;
+
+                        .titleN {
+                            margin-top: -28px;
+                            margin-bottom: 25px;
+                            z-index: -1;
+                        }
+                    }
+
+                    :global(.tab-pane) {
+                        padding: 0px 0px;
+                    }
+
+                    .actionMain {
+                        margin-top: 20px;
+
+                    }
+
+                    .actionMainInSide {
+
+                        .expArrow {
+
+                            .actionArrow {
+                                right: 50px;
+                            }
+                        }
+                    }
+
+                    :global(.nav) {
+
+                        :global(.nav-item) {
+                            width: 100%;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) {
+
+    .modalCts {
+
+        &.modalCtsAction {
+
+            :global(.modal-dialog) {
+                max-width: 900px;
+            }
+        }
+    }
+}

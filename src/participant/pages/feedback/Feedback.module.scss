@@ -1,0 +1,205 @@
+.disabled {
+    .feedbackOverall {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 18px 0px 10px 0px;
+
+        .feedbackRating {
+            ul {
+                display: flex;
+                padding-left: 0px;
+
+                li {
+                    list-style: none;
+                    font-size: 24px;
+                    padding: 0px 5px;
+
+                    a {
+                        svg {
+                            color: #FBBF24;
+                        }
+                    }
+                }
+
+                .starGray {
+                    a {
+                        svg {
+                            color: #64748B;
+                        }
+                    }
+                }
+
+                .starBlue {
+                    a {
+                        svg {
+                            color: #009CE0;
+                        }
+                    }
+                }
+
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                color: #000;
+                font-style: italic;
+            }
+        }
+
+        .feedbackNumber {
+            ul {
+                display: flex;
+                padding-left: 0px;
+                margin-bottom: 3px;
+
+                li {
+                    list-style: none;
+                    font-size: 24px;
+                    padding: 0px 17px;
+                    
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                        font-weight: 400;
+                    }
+                }
+                .numberDark{
+                    background-color: #006182;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-weight: 400;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+            .feedbackVery{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p{
+                    padding: 0px 8px;
+                    margin:5px 0px 0px 0px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 10px;
+                    text-align: center;
+                }
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 23px;
+            color: #252733;
+           
+            span{
+                display: block;
+                font-style: italic;
+                font-size: 16px;
+                font-weight: 400;
+                color: #252733;
+                margin-top: 6px;
+            }
+        }
+    }
+
+    .additionalBtn{
+        a{
+            display: block;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+    }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+
+    .modalCts {
+
+        &.modalCtsAction {
+
+            :global(.modal-dialog) {
+
+                :global(.modal-content) {
+                    background-color: #fff;
+
+                    :global(.btn-close) {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    :global(.modal-body) {
+                        padding-top: 0px;
+
+                        .titleN {
+                            margin-top: -28px;
+                            margin-bottom: 25px;
+                            z-index: -1;
+                        }
+                    }
+
+                    :global(.tab-pane) {
+                        padding: 0px 0px;
+                    }
+
+                    .actionMain {
+                        margin-top: 20px;
+
+                    }
+
+                    .actionMainInSide {
+
+                        .expArrow {
+
+                            .actionArrow {
+                                right: 50px;
+                            }
+                        }
+                    }
+
+                    :global(.nav) {
+
+                        :global(.nav-item) {
+                            width: 100%;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) {
+
+    .modalCts {
+
+        &.modalCtsAction {
+
+            :global(.modal-dialog) {
+                max-width: 900px;
+            }
+        }
+    }
+}

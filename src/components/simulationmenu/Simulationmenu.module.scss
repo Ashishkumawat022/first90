@@ -1,0 +1,290 @@
+.MenuBodyS2 {
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0px #e5e5e5;
+  padding-top: 15px;
+  position: sticky;
+  top: 15px;
+
+  h5 {
+    font-size: 16px;
+    color: var(--AdminMain);
+    padding: 0px 12px;
+  }
+  h6 {
+    font-size: 15px;
+    padding: 0px 12px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 12px;
+    padding: 0px 12px;
+    margin-bottom: 10px;
+  }
+
+  .s2menuList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    overflow: hidden;
+    height: calc(100vh - 130px);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+    li {
+      margin-bottom: 5px;
+
+      :global(.btn) {
+        display: flex;
+        align-items: center;
+        color: var(--AdminMain);
+        text-decoration: none;
+        padding: 10px 12px;
+        background-color: transparent;
+        transition: 0.5s;
+        width: 100%;
+        border: none;
+        position: relative;
+        font-weight: 500;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &::after {
+          filter: invert(10%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+            brightness(-25%) contrast(10%);
+          width: 15px;
+          height: 15px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+          flex-shrink: 0;
+          margin-left: auto;
+          margin-top: 8px;
+          transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out,
+            -webkit-transform 0.2s ease-in-out;
+          background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' width='13.001' height='7.002' viewBox='0 0 13.001 7.002'%3e%3cpath id='icon-arrow-white' d='M1.646,4.646a.5.5,0,0,1,.708,0L8,10.293l5.646-5.647a.5.5,0,0,1,.708.708l-6,6a.5.5,0,0,1-.708,0l-6-6a.5.5,0,0,1,0-.708Z' transform='translate(-1.499 -4.499)' fill='%23fff' fill-rule='evenodd'/%3e%3c/svg%3e ");
+        }
+      }
+
+      .menuIcon {
+        margin-right: 5px;
+        position: relative;
+        text-align: center;
+        top: -1px;
+        width: 30px;
+
+        svg {
+          height: 24px;
+          transition: 0.5s;
+          width: 24px;
+        }
+      }
+
+      .first {
+        display: none;
+        transition: 0.5s;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          a {
+            text-decoration: none;
+            padding: 12px 20px;
+            display: flex;
+            color: #191d23;
+            font-size: 14px;
+            margin-bottom: 2px;
+            font-weight: 500;
+            margin-left: 5px;
+            border-radius: 0px !important;
+
+            &:global(.active) {
+              background-color: #e7eaee;
+              color: var(--AdminMain);
+            }
+            .menuName {
+              // background: #fff;
+            }
+
+            &.addStepBtn {
+              font-style: italic;
+              font-weight: 600;
+
+              .icon {
+                margin-left: 5px;
+              }
+            }
+          }
+
+          .step2 {
+            display: none;
+            transition: 0.5s;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+              padding-left: 25px;
+              border-bottom: 1px solid #d5d5d5;
+              padding-bottom: 10px;
+
+              .menuName {
+                text-decoration: none;
+                padding: 5px 10px 0px 0px;
+                display: block;
+                color: #191d23;
+                font-size: 14px;
+                margin-bottom: 2px;
+                font-weight: 500;
+                // background: #fff;
+              }
+            }
+          }
+
+          &.active {
+            .step2 {
+              display: block;
+            }
+
+            :global(.btn) {
+              &::after {
+                transform: rotate(180deg);
+                margin-top: -4px;
+              }
+            }
+          }
+        }
+      }
+
+      &.active {
+        .first {
+          display: block;
+        }
+      }
+    }
+
+    .addNewModule {
+      padding: 8px 15px;
+      background: var(--AdminMain);
+      color: #fff;
+      font-size: 13px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .deleteNew {
+      .modlueDelete {
+        color: #fff;
+        display: inline-block;
+        width: 50px;
+        background: #7678e6;
+        height: 50px;
+        line-height: 40px;
+        border-radius: 50px;
+        margin-top: 25px;
+        border: 4px solid #e1e1e1;
+        cursor: pointer;
+
+        .icon {
+          font-size: 22px;
+        }
+      }
+      strong {
+        display: block;
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: 10px;
+        opacity: 0;
+      }
+
+      &:hover {
+        .modlueDelete {
+          transform: scale(1.3);
+        }
+
+        strong {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.DeletePopup {
+  :global(.modal-content) {
+    text-align: center;
+    padding: 0px 0px;
+    border: none;
+    border-radius: 10px;
+
+    :global(.modal-body) {
+      padding: 20px 30px;
+
+      p {
+        font-size: 17px;
+        color: #000;
+        font-weight: 500;
+      }
+      :global(.btn) {
+        margin: 0px 5px;
+        min-width: 100px;
+      }
+      .submitBtn {
+        background: var(--Main2);
+        border-color: var(--Main2);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.moduleName {
+  // background-color: #fff;
+}
+
+
+
+.MenuBodyS2{
+  .s2menuList{
+    .active {
+      .btnAfter {
+        &::after {
+          transform: rotate(180deg);
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+.s2menuList {
+  
+  height: auto !important;
+
+
+}
+}

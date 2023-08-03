@@ -1,0 +1,288 @@
+.uploadPhotoBox {
+    display:flex;
+    align-items: center;
+
+    .logoIcon {
+        width: 55px;
+        height: 55px;
+        border-radius: 0px;
+        object-fit: cover;
+    }
+    .uploadPhotoBoxBody {
+        padding-left: 15px;
+
+        h5 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        p {
+            margin:0;
+            font-style: italic;
+        }
+
+    }
+}
+.uploadPhotoAction{
+    width: 75%;
+    padding: 20px;
+    border: 1px solid #D0D5DD;
+    border-radius: 4px;
+    margin: 0 auto;
+
+    p{
+        font-style: unset;
+        color: #4B5768;
+        font-weight: 600;
+        line-height: 23px;
+
+        span{
+            font-weight: 400;
+        }
+    }
+}
+
+.subjectInput {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+
+    p{
+        margin-right: 12px;
+    }
+}
+
+.fileUpload {
+    text-align: center;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: var(--AdminMain2);
+    padding: 30px 20px;
+
+    p {
+        margin: 15px 0px 15px 0px;
+    }
+    span {
+        color:var(--AdminMain);
+    }
+    .uploadFile {
+        position: relative;
+        text-align: center;
+        padding: 10px 15px;
+        border: 1px solid var(--AdminMain);
+        border-radius: 5px;
+        color: var(--AdminMain);
+        width: 180px;
+        margin: 0 auto;
+        margin-top: 15px;
+
+        input[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        svg {
+            margin-left: 5px;
+            font-size: 14px;
+            position: relative;
+            top: -2px;
+
+            path {
+                stroke: var(--AdminMain);
+            }
+        }
+    }
+
+}
+
+.resourceList{
+    padding-left: 0px;
+    li{
+        list-style: none;
+        border-bottom: 1px solid #D0D5DD;
+        padding: 20px;
+        font-size: 14px;
+        color: #4B5768;
+        font-weight: 500;
+    }
+}
+
+.teamText{
+    color: var(--AdminMain);
+
+    svg{
+        font-size: 30px;
+        margin-left: 12px;
+    }
+    span{
+        color: #A0ABBB;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-left: 12px;
+    }
+}
+.paragraf{
+    h6{
+        font-size: 18px;
+        color: #191D23;
+        line-height: 23px;
+        font-weight: 500;
+        margin-top: 16px;
+    }
+    p{
+        margin-top: 20px;
+    }
+}
+
+.ratingSide{
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0px #e5e5e5;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    :global(.form-control){
+
+        &:focus{
+            box-shadow: none !important;
+        }
+        
+    }
+
+    .ratingRight{
+        padding: 20px 20px;
+
+        .ratingNumber{
+            color: #7678E6;
+            font-size: 30px;
+        }
+    }
+    Label{
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    ul{
+        padding-left: 0px;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+    li{
+        margin: 6px 7px;
+        font-size: 30px;
+
+        :global(.dropdown){
+            button{
+                background-color: transparent !important;
+                color: #000 !important;
+                border: none;
+                padding: 0px;
+                font-size: 30px;
+
+                &::after {
+                    display: none;
+                }
+                &:focus {
+                    box-shadow: none !important;
+                }
+            }
+            :global(.dropdown-menu){
+                min-width: 160px;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li{
+                        img{
+                            width: 30px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    li:nth-child(1), li:nth-child(2), li:nth-child(3){
+        color: #FBBF24;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: center;
+    }
+    .ratingDetails{
+        border-top: 1px solid #D0D5DD;
+        padding: 20px 20px;
+
+        .ratingPoint{
+            margin-bottom: 14px;
+            h5{
+                font-size: 18px;
+                line-height: 23px;
+                font-weight: 500;
+            }
+            p{
+                font-size: 16px;
+                line-height: 23px;
+                font-weight: 300;
+                color: #323A46;
+                text-align: left;
+            }
+            ul{
+                justify-content: start;
+                margin-top: 15px;
+                margin-bottom: 0px;
+            }
+            li{
+                font-size: 16px;
+                border: 1px solid #D0D5DD;
+                border-radius: 8px;
+                padding: 6px 14px;
+                cursor: pointer;
+                color: #000;
+            }
+            .ratingNumber{
+                background-color: #7678E6;
+                color: #fff;
+            }
+            
+            .veryPoint{
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 10px;
+                width: 275px;
+
+                p {
+                    text-align:center;
+                }
+            }
+        }
+        
+        
+        .feedbackBtnGrey{
+            background-color: transparent;
+            color: var(--AdminMain);
+            min-width: 160px;
+            padding: 10px 10px;
+            border: 1px solid var(--AdminMain);
+        }
+    }
+}
+
+.precedent_contract {
+    background: #D9D9D9;
+    padding: 10px 20px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0px;
+        line-height: 37px;
+    }
+}

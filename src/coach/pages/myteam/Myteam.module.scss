@@ -1,0 +1,34 @@
+.dataTableBox {
+
+    .dataTablBtns {
+
+        .btnT {
+            background:red;
+        }
+    }
+}
+
+.currentPrecent {
+    width: 100%;
+
+:global(.progress) {
+  border-radius: 8px !important;
+  width:100%;
+  
+  :global(.progress-bar) {
+    background-color: #29cc97 !important;
+  }
+}
+
+span {
+    width:50px;
+    display: block;
+}
+}
+
+.tableFilterIcons2 {
+
+    a {
+        color:var(--CoachMain) !important;
+    }
+}

@@ -1,0 +1,94 @@
+.profileUpload {
+    padding-right: 30px;
+
+    .updateProfile {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #d8d8d8;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .uploadBtn {
+        width: 100%;
+        background: #fff;
+        border: 1px solid #D0D5DD;
+        margin: 0 auto;
+        padding: 10px 10px;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-top: 20px;
+        position:relative;
+
+        input[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+    .removeBtn {
+        width: 100%;
+        background: transparent;
+        border:none;
+        margin: 0 auto;
+        margin-top: 15px;
+        font-weight: 500;
+        color: var(--main);
+    }
+}
+
+.restPassword {
+
+    .changePassword {
+        border-right: 1px solid #D0D5DD;
+        padding-right: 40px;
+    }
+    .passwordReminder {
+        padding-left: 40px;
+    
+        h5 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0px;
+            color:#323A46;
+        }
+    }
+}
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+    
+    .restPassword {
+    
+        .changePassword {
+            border-right:none;
+            padding-right: 15px;
+        }
+        .passwordReminder {
+            padding-left: 15px;
+        
+            h5 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    
+}

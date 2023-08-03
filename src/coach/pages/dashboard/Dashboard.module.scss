@@ -1,0 +1,166 @@
+.cardBox {
+  text-align: center;
+  background: #fff;
+  color: var(--CoachMain) !important;
+  border-radius: 5px;
+  padding: 25px 10px;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .cardIcon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+:global(.CircularProgressbar-path) {
+  stroke: rgba(132, 134, 244, 0.7) !important;
+}
+.currentProgress {
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0px #e5e5e5;
+  border-radius: 3px;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  height: 100%;
+
+  .currentBox {
+    h4 {
+      font-size: 19px;
+      color: var(--CoachMain);
+      font-weight: 600;
+      line-height: 23px;
+
+      .link_btn {
+        font-size: 16px;
+        float: right;
+        text-decoration: none;
+      }
+    }p{
+      select{
+border: none;
+outline:none;
+      }
+    }
+    .currentTeam {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 0px;
+      margin-top: 18px;
+      border-bottom: 2px solid #a0abbb;
+
+      p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+.prtGraph {
+  border: 1px solid #cecdcd;
+  padding: 10px 10px;
+  border-radius: 8px;
+
+  h5 {
+    margin: 0px 0px 10px 0px !important;
+    font-size: 12px !important;
+    text-align: center;
+    line-height: 18px !important;
+  }
+  p {
+    margin: 10px 0px 0px 0px;
+    font-size: 12px;
+    text-align: center;
+
+    span {
+      color: #323a46;
+    }
+
+    &.engagementNumber {
+      margin: 25px 0px 0px 0px;
+    }
+  }
+}
+
+.squareChart {
+  :global(.recharts-xAxis.xAxis) {
+    display: none;
+  }
+}
+
+.currentProgress {
+  .currentBox {
+    h5 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 23px;
+      color: #a0abbb;
+      margin: 0px 0px 20px 0px;
+    }
+
+    table {
+      margin-top: 14px;
+      margin-bottom: 20px;
+
+      tbody {
+          border-top: none !important;
+      }
+
+      th {
+        font-weight:600;
+        color:#4B5768;
+      }
+
+      tr {
+        td {
+          vertical-align: middle;
+        }
+      }
+    }
+    .currentPrecent {
+          width: 200px;
+
+      :global(.progress) {
+        border-radius: 8px !important;
+        width:100%;
+        
+        :global(.progress-bar) {
+          background-color: #29cc97 !important;
+        }
+      }
+    }
+
+    p {
+      color: #a0abbb;
+    }
+    .teamChart {
+      ul {
+        padding-left: 0px;
+        padding: 14px 0px;
+        li {
+          display: flex;
+          list-style: none;
+          justify-content: space-between;
+          font-size: 16px;
+          color: #191d23;
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+          border-bottom: 1px solid #ededed;
+          align-items: center;
+
+          span {
+            color: #a0abbb;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+.cardBox {
+  text-align: center;
+  background: #eeeeee;
+  color: #fff !important;
+  border-radius: 5px;
+  padding: 25px 10px;
+  display: block;
+  text-decoration: none;
+
+  h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .cardIcon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.teamBox {
+  background: #fff;
+  padding: 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 21px 2px #dedede;
+  text-align: center;
+
+  h5 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    span {
+      color: var(--AdminMain);
+    }
+  }
+
+  .cardImg {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .cardFt {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 15px;
+
+    :global(.progress) {
+      width: 100%;
+      border-radius: 50px;
+      margin-right: 10px;
+
+      :global(.progress-bar) {
+        background-color: #29cc97 !important;
+      }
+
+      &.team1 {
+        :global(.progress-bar) {
+          background-color: #009ce0 !important;
+        }
+      }
+      &.team2 {
+        :global(.progress-bar) {
+          background-color: #48bc93 !important;
+        }
+      }
+      &.team3 {
+        :global(.progress-bar) {
+          background-color: #7c7ff3 !important;
+        }
+      }
+      &.team4 {
+        :global(.progress-bar) {
+          background-color: #f4b04a !important;
+        }
+      }
+    }
+  }
+}
+.addBtn {
+  float: right;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #a7a7a8;
+}
+
+.descriptionBox {
+  .descriptionBoxLeft {
+    padding-right: 25px;
+
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      span {
+        color: var(--AdminMain);
+      }
+    }
+  }
+
+  .descriptionBoxRight {
+    border-left: 1px solid #c3c3c3;
+    padding-left: 25px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--AdminMain);
+      position: relative;
+
+      &::after {
+        content: "";
+        // content: "";
+        background-color: var(--AdminMain2);
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        border-radius: 0px;
+      }
+    }
+  }
+}
+
+.notFound {
+  padding: 30px 0px 30px 0px;
+
+  .notFoundLeft {
+  }
+
+  .notFoundRight {
+    text-align: center;
+  }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+  .cardBox {
+    margin-bottom: 15px;
+  }
+
+  .teamBox {
+    margin-bottom: 15px;
+  }
+
+  .descriptionBox {
+    .descriptionBoxLeft {
+      padding-right: 15px;
+    }
+
+    .descriptionBoxRight {
+      border-left: none;
+      padding-left: 15px;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cardBox {
+    margin-bottom: 15px;
+  }
+
+  .teamBox {
+    margin-bottom: 15px;
+  }
+
+  .descriptionBox {
+    .descriptionBoxLeft {
+      padding-right: 15px;
+    }
+
+    .descriptionBoxRight {
+      border-left: none;
+      padding-left: 15px;
+      margin-top: 25px;
+    }
+  }
+
+  .notFound {
+    .notFoundRight {
+      .cardImg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .cardBox {
+    margin-bottom: 15px;
+  }
+
+  .teamBox {
+    margin-bottom: 15px;
+  }
+}

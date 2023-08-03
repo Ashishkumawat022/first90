@@ -1,0 +1,30 @@
+.dataTableBox {
+  .dataTablBtns {
+    .btnT {
+      background: red;
+    }
+  }
+}
+
+.dropdownAction {
+  :global(.dropdown-menu) {
+    width: 240px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+
+    a {
+      text-decoration: none;
+      color: var(--AdminMain);
+      font-size: 16px;
+      display: block;
+      width: 100%;
+      padding: 9px 15px;
+      font-weight: 500;
+
+      svg {
+        font-size: 18px;
+        margin-right: 3px;
+      }
+    }
+  }
+}

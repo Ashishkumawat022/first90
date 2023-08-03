@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14">
+  <g id="lightbulb" transform="translate(-2.5 -1)">
+    <path id="Path_29761" data-name="Path 29761" d="M10,12H6a.5.5,0,1,0,0,1h4a.5.5,0,1,0,0-1Z" fill="#64748b"/>
+    <path id="Path_29762" data-name="Path 29762" d="M9.5,14h-3a.5.5,0,1,0,0,1h3a.5.5,0,1,0,0-1Z" fill="#64748b"/>
+    <path id="Path_29763" data-name="Path 29763" d="M8,1a5.5,5.5,0,0,0-3.3,9.9A.5.5,0,0,0,5,11h6a.5.5,0,0,0,.3-.1A5.5,5.5,0,0,0,8,1Z" fill="#64748b"/>
+  </g>
+</svg>

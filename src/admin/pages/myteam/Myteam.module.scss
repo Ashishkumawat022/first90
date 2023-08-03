@@ -1,0 +1,25 @@
+.dataTableBox {
+  .dataTablBtns {
+    .btnT {
+      background: red;
+    }
+  }
+}
+
+.currentPrecent {
+  width: 80%;
+
+  :global(.progress) {
+    border-radius: 8px !important;
+    width: 100%;
+
+    :global(.progress-bar) {
+      background-color: var(--AdminMain) !important;
+    }
+  }
+
+  span {
+    width: 50px;
+    display: block;
+  }
+}

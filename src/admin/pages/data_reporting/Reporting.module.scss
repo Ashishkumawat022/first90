@@ -1,0 +1,147 @@
+.currentProgress {
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0px #e5e5e5;
+  border-radius: 3px;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  height: 500px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .currentBox {
+    h4 {
+      font-size: 19px;
+      color: #4338ca;
+      font-weight: 600;
+      line-height: 23px;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 23px;
+      color: #a0abbb;
+      margin: 0px 0px 20px 0px;
+    }
+    .currentTeam {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 0px;
+      margin-top: 18px;
+      border-bottom: 2px solid #a0abbb;
+
+      p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+.prtGraph {
+  border: 1px solid #cecdcd;
+  padding: 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  h5 {
+    margin: 0px 0px 10px 0px !important;
+    font-size: 12px !important;
+    text-align: center;
+    line-height: 18px !important;
+  }
+  p {
+    margin: 10px 0px 0px 0px;
+    font-size: 12px;
+    text-align: center;
+
+    span {
+      color: #323a46;
+    }
+
+    &.engagementNumber {
+      margin: 25px 0px 0px 0px;
+    }
+  }
+}
+
+.squareChart {
+  :global(.recharts-xAxis.xAxis) {
+    display: none;
+  }
+}
+
+.onActiveClass {
+  font-size: 12px;
+  overflow-y: scroll;
+  min-height: 200px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:global(.active) {
+    border: 1px solid var(--AdminMain);
+    border-radius: 8px;
+    background: rgba(132, 134, 244, 0.05);
+  }
+}
+
+.currentReporting {
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0px #e5e5e5;
+  border-radius: 3px;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+
+  table {
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid #d0d5dd;
+      th {
+        padding-top: 24px;
+        padding-bottom: 14px;
+      }
+      td {
+        padding-top: 24px;
+        padding-bottom: 14px;
+        color: #64748b;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      td:nth-child(1) {
+        color: #4b5768;
+        font-weight: 600;
+      }
+    }
+  }
+  .searchReporting {
+    position: relative;
+    input {
+      width: 250px;
+      padding-left: 35px;
+      height: 40px;
+    }
+    .searchIcon {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translate(0%, -50%);
+      color: #707070;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .onActiveClass {
+    margin: 10px 0px;
+    min-height: 160px !important;
+  }
+  
+}
